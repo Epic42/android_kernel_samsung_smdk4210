@@ -78,7 +78,7 @@ endif
 else
 obj-$(CONFIG_MACH_U1_BD)		+= u1-gpio.o
 endif
-ifneq(CONFIG_SEC_MODEM_U1_SPR)
+ifneq ($(CONFIG_SEC_MODEM_U1_SPR),y)
 ifeq ($(CONFIG_MACH_U1_NA_SPR),y)
 obj-$(CONFIG_MACH_U1)			+= dev-c1-phone.o
 endif
